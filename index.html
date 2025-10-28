@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Servidor Web1 - 7368</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #ADD8E6 0%, #4682B4 100%); min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; overflow: hidden;">
+    
+    <div style="position: relative; z-index: 1; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: 25px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); padding: 50px 40px; width: 100%; max-width: 650px; animation: slideIn 0.8s ease-out; overflow-y: hidden;">
+        
+        <div style="position: relative; width: 100%; margin-bottom: 30px; overflow: hidden; border-radius: 15px;">
+            <img src="images/BANNER-ACME-SEMFUNDO.png" alt="ACME Banner" style="width: 100%; height: auto; display: block; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+
+        <h1 style="font-size: 3rem; background: linear-gradient(135deg, #ADD8E6 0%, #5F9EA0 50%, #4682B4 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800; margin: 0 0 20px 0; line-height: 1.2; text-align: center; animation: fadeInUp 1s ease-out 0.3s both;">
+            Seja bem-vindo à página local SWeb1
+        </h1>
+
+        <h2 style="font-size: 2rem; color: #555; margin: 0 0 40px 0; font-weight: 600; text-align: center; animation: fadeInUp 1s ease-out 0.5s both;">
+            Lucas Bokorni - 7368
+        </h2>
+
+        <div style="text-align: center; animation: fadeInUp 1s ease-out 0.7s both;">
+            <button style="padding: 16px 40px; font-size: 1.2rem; font-weight: 600; background: linear-gradient(135deg, #ADD8E6 0%, #5F9EA0 50%, #4682B4 100%); color: white; border: none; border-radius: 50px; cursor: pointer; box-shadow: 0 10px 25px rgba(173, 216, 230, 0.5); transition: all 0.3s ease; position: relative; overflow: hidden;" 
+                onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 15px 35px rgba(173, 216, 230, 0.7)';" 
+                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 25px rgba(173, 216, 230, 0.5)';"
+                onmousedown="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 8px 20px rgba(173, 216, 230, 0.5)';"
+                onmouseup="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 15px 35px rgba(173, 216, 230, 0.7)';">
+                Clique Aqui
+            </button>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <span style="display: inline-block; background: linear-gradient(135deg, #ADD8E6 0%, #5F9EA0 50%, #4682B4 100%); color: white; padding: 8px 20px; border-radius: 20px; font-size: 0.9rem; font-weight: 600; box-shadow: 0 5px 15px rgba(173, 216, 230, 0.5); animation: pulse 2s ease-in-out infinite;">
+                🚀 Servidor Online
+            </span>
+        </div>
+    </div>
+
+    <style>
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 5px 15px rgba(173, 216, 230, 0.5);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 8px 25px rgba(173, 216, 230, 0.7);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem !important;
+            }
+            h2 {
+                font-size: 1.3rem !important;
+            }
+            button {
+                padding: 14px 30px !important;
+                font-size: 1rem !important;
+            }
+        }
+    </style>
+
+</body>
+</html>
