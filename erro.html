@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Erro Servidor Web1 - 7368</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ADD8E6 100%, #764ba2 10%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .error-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+            width: 100%;
+            padding: 50px 40px;
+            text-align: center;
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .banner-img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+        .error-code {
+            font-size: 120px;
+            font-weight: 900;
+            background: linear-gradient(135deg, #ADD8E6 100%, #764ba2 10%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 20px 0;
+            line-height: 1;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        .error-title {
+            font-size: 32px;
+            color: #333;
+            margin: 20px 0;
+            font-weight: 700;
+        }
+
+        .error-subtitle {
+            font-size: 20px;
+            color: #666;
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+
+        .server-info {
+            background: linear-gradient(135deg, #ADD8E6 100%, #764ba2 10%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .error-image {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            margin: 30px 0;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .author-info {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            color: #555;
+            font-size: 16px;
+        }
+
+        .btn-home {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #ADD8E6 100%, #764ba2 10%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-home:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            .error-container {
+                padding: 30px 20px;
+            }
+
+            .error-code {
+                font-size: 80px;
+            }
+
+            .error-title {
+                font-size: 24px;
+            }
+
+            .error-subtitle {
+                font-size: 16px;
+            }
+
+            .server-info {
+                font-size: 16px;
+                padding: 15px;
+            }
+
+            .btn-home {
+                padding: 12px 30px;
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .error-code {
+                font-size: 60px;
+            }
+
+            .error-title {
+                font-size: 20px;
+            }
+
+            .error-subtitle {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <img src="images/bannercti.png" alt="Banner CTI" class="banner-img">
+        
+        <div class="error-code">404</div>
+        
+        <h1 class="error-title">Oops! Página Não Encontrada</h1>
+        
+        <p class="error-subtitle">
+            A página que você está procurando não existe ou foi movida.
+        </p>
+
+        <div class="server-info">
+            Servidor WEB1 - ERRO 404
+        </div>
+
+        <img src="images/erro404.jpg" alt="Erro 404" class="error-image">
+
+         
+
+        <div class="author-info">
+            <strong>Gerada por Lucas Bokorni - 7368</strong>
+        </div>
+    </div>
+</body>
+</html>

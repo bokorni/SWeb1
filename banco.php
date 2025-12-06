@@ -1,6 +1,6 @@
 <?php
 // Configurações
-$servidor = "INFORMAR _O_IP_SERVIDOR_MARIADB";
+$servidor = "10.200.200.5";
 $base = "dbSIC0217";
 $usuario = "SIC0217user";
 $senha = "alunos";
@@ -15,14 +15,14 @@ $result = $conn->query($sql);
 echo "<body style='background-color:#ADD8E6;'>";
 echo "<center>";
 echo "<h1>SWeb1 -  Lucas Bokorni -   7368</h1>";
-echo "<img src=’https://abre.ai/banneracme’>";
+echo " <img src='images/BANNER-ACME-SEMFUNDO.png'>";
 if ($result->rowCount() > 0) {
 	echo "<table border='1' align='center'>";
 	echo "<tr><th>ID</th><th>Nome</th><th>Telefone</th></tr>";
 	foreach ($result as $row) {
     	echo "<tr>";
-    	echo "<td>" . $row['id_alunos’] . "</td>";
-    	echo "<td>" . $row['nm_alunos'] . "</td>";
+    	echo "<td>" . $row['id_alunos'] . "</td>";
+    	echo "<td>" . $row['nm_alunos'] . "</td>"; 
     	echo "<td>" . $row['nr_telefone'] . "</td>";
     	echo "</tr>";
 	}
